@@ -1,0 +1,13 @@
+apiVersion: v2
+name: chatapp
+version: 0.1.0
+dependencies:
+  - name: frontend
+    version: 0.1.0
+    repository: "file://../frontend"
+  - name: backend
+    version: 0.1.0
+    repository: "file://../backend"
+  - name: mongo
+    version: 0.1.0
+    repository: "file://../mongo"

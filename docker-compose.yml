@@ -1,8 +1,6 @@
 services:
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: usmanhaider12/chatapp-frontend:latest
     ports:
       - "8080:80"
     depends_on:
@@ -14,9 +12,7 @@ services:
     restart: unless-stopped
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: usmanhaider12/chatapp-backend:latest
     ports:
       - "5001:5001"
     depends_on:
@@ -46,13 +42,3 @@ networks:
 
 volumes:
   mongodb_data:
-
-
-
-
-
-
-
-
-
-
